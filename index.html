@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/logo.jpeg">
+    <title>LOGIN</title>
+  </head>
+  <body>
+    <div class="contanier">
+         <div class="login card">
+            <h1>Login</h1>
+            <div class="form">
+                <input type="text" id="c_name" name="text" autocomplete="off" required />
+                <label for="text" class="label-name">
+                  <span class="content-name">
+                 Username
+                  </span>
+                </label>
+              </div>
+            <div class="form">
+                <input type="text" id="c_mail" name="text" autocomplete="off" required />
+                <label for="text" class="label-name">
+                  <span class="content-name">
+                 Email
+                  </span>
+                </label>
+              </div>
+            <div class="form">
+                <input type="password" id="c_password" name="text"  autocomplete="off" required />
+                <label for="password" class="label-name">
+                  <span class="content-name">
+                 Password
+                  </span>
+                </label>
+                </div>
+                <a href="#">forget password ?</a>
+                <button type="button" id="login_btn">Login</button>
+         </div>
+         <div class="signup card">
+          <h1>Sign up</h1>
+          <div class="form">
+              <input type="text" name="text" id="n_name" autocomplete="off" required />
+              <label for="text" class="label-name">
+                <span class="content-name">
+               Username
+                </span>
+              </label>
+            </div>
+          <div class="form">
+              <input type="text" name="email"  pattern="[^\s@]+@[^\s@]+\.[^\s@]+" id="n_email" autocomplete="off" required />
+              <label for="text" class="label-name">
+                <span class="content-name">
+               Email
+                </span>
+              </label>
+            </div>
+          <div class="form">
+              <input type="password" name="password" id="n_password"  autocomplete="off" required />
+              <label for="text" class="label-name">
+                <span class="content-name">
+               Password
+                </span>
+              </label>
+              </div>
+              <button type="button" id="sign_up">Sign up</button>
+         </div>
+    </div>
+<div class="bg"><img src="images/hero-bg.jpg" alt=""></div>
+<div id="img">
+    <div class="front" id="front">
+      <h1>Welcome Back</h1>
+      <p>Please log in using your personal information to stay connected with us.</p>
+      <button type="button" id="sign_up2">Sign up</button>
+
+    </div>
+    <div class="back" id="back">
+      <h1>Create Account</h1>
+      <p>To become a part of our community, please sign up using your personal information.</p>
+      <button type="button" id="login2">Login</button>
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+

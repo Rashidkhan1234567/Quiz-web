@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool Quiz App</title>
+    <link rel="stylesheet" href="Quiz.css" />
+    <link rel="icon" href="../images/logo.jpeg" />
+  </head>
+  <body>
+    <header>
+      <h2>Cool Quiz App</h2>
+      <h1>Welcome to the Quiz</h1>
+      <button type="button" id="logout">Logout</button>
+    </header>
+    <div class="img">
+
+        <img src="../images/bg.jpeg" alt="" />
+    </div>
+    <section>
+      <div class="start" id="start2">
+        <h2>Start Quiz</h2>
+        <div class="role">
+          <ol>
+            <li>
+              This is a multiple choice quiz. You will be given 10 questions to
+              answer.
+            </li>
+            <li>Each question is worth 1 point.</li>
+            <li>Good Luck!</li>
+          </ol>
+        </div>
+        <button type="button" id="start">Start Quiz</button>
+      </div>
+
+      <div class="quiz-container" id="qc">
+        <div id="quiz">
+          <div class="tier">
+            <h1>Questions</h1>
+            <!-- <p id="timer"><span id="sec">00</span>&nbsp;:&nbsp;<span id="msec">00</span></p> -->
+          </div>
+          <h2 id="question">Question Text</h2>
+          <div class="options">
+            <label>
+              <input type="radio" name="answer" class="answer" id="a" />
+              <span id="a_text">Option A</span>
+            </label>
+            <label>
+              <input type="radio" name="answer" class="answer" id="b" />
+              <span id="b_text">Option B</span>
+            </label>
+            <label>
+              <input type="radio" name="answer" class="answer" id="c" />
+              <span id="c_text">Option C</span>
+            </label>
+            <label>
+              <input type="radio" name="answer" class="answer" id="d" />
+              <span id="d_text">Option D</span>
+            </label>
+          </div>
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+    </section>
+    <script src="Quiz.js"></script>
+  </body>
+</html>
