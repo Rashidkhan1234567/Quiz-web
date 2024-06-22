@@ -1,4 +1,4 @@
-//     Picture change buttons
+e//     Picture change buttons
 
 const login2 = document.getElementById("login2");
 const sign_up2 = document.getElementById("sign_up2");
