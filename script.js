@@ -1,4 +1,4 @@
-e//     Picture change buttons
+//     Picture change buttons
 
 const login2 = document.getElementById("login2");
 const sign_up2 = document.getElementById("sign_up2");
@@ -76,7 +76,8 @@ function signup() {
           icon: "success",
         });
         setInterval(function () {
-          window.location.href = "Quiz 💡/Quiz.html";
+          // window.location.href = "Quiz 💡/Quiz.html";
+          back()
         }, 2000);
       }
     }
@@ -115,6 +116,7 @@ login_btn.addEventListener("click", () => {
             title: "Login Successfully",
             icon: "success",
           });
+          localStorage.setItem("Name", Names)
           setInterval(function () {
             window.location.href = "Quiz 💡/Quiz.html";
           }, 2000);

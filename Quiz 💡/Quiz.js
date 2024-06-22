@@ -82,6 +82,21 @@ const quizData = [
     correct: "c",
   },
 ];
+if(localStorage.getItem("Name") == null){
+window.location.href = "../index.html"
+}  
+//      User welcome
+
+const headingchange = document.getElementById('headingchange')
+
+//     Changecase
+
+  let ccase = localStorage.getItem("Name")
+  let changecase = ccase.charAt(0).toUpperCase() + ccase.slice(1)
+  console.log(changecase);
+
+headingchange.innerHTML = `Welcome ${changecase} to the Quiz`
+//      User welcome End
 
 const quiz = document.getElementById("quiz");
 const questionEl = document.getElementById("question");
@@ -176,3 +191,11 @@ start.addEventListener("click", () => {
 //     }
 //   },10);
 });
+
+
+const logout = document.getElementById('logout')
+logout.addEventListener("click",()=>{
+  localStorage.removeItem("Name")
+  window.location.href = "../index.html"
+})
+
