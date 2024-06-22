@@ -195,7 +195,10 @@ start.addEventListener("click", () => {
 
 const logout = document.getElementById('logout')
 logout.addEventListener("click",()=>{
-  localStorage.removeItem("Name")
-  window.location.href = "../index.html"
+  let confirm1 = confirm("Confirm to logout")
+  if(confirm1){
+    localStorage.removeItem("Name")
+    window.location.href = "../index.html"
+  }
 })
 
